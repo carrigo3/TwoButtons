@@ -14,7 +14,26 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+var index = 0
+    @IBOutlet weak var label: UILabel!
+    
+    
+    @IBAction func addOne(_ sender: UIButton) {
+        index += 1
+        label.text = String(index)
+    }
+    @IBAction func addTwo(_ sender: UIButton) {
+        index += 2
+        label.text = String(index)
+    }
+    @IBAction func clearButton(_ sender: UIButton) {
+        index = 0
+        label.text = String(index)
+    }
+    
+    
 }
+
+
+
 
